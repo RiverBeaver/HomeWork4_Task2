@@ -1,0 +1,56 @@
+body {
+    background-color: #e3e3e3;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    color: white;
+    background-color: #868686;
+    display: inline-block;
+    padding: 0;
+}
+
+li {
+    font-size: 60px;    
+    padding: 50px 0;
+    padding-right: 350px;
+
+}
+
+li::before {
+    content: "";
+    display: inline-block;
+    width: 256px;
+    height: 256px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    padding-right: 90px;
+    padding-left: 40px;
+    background-position: 40px 0;
+}
+
+li:nth-of-type(1)::before {
+    background-image: url(icons_hw_module_3/edit.png);
+}
+
+li:nth-of-type(2)::before {
+    background-image: url(icons_hw_module_3/favorites.png);
+}
+
+li:nth-of-type(3)::before {
+    background-image: url(icons_hw_module_3/history.png);
+}
+
+li:nth-of-type(4)::before {
+    background-image: url(icons_hw_module_3/security.png);
+}
+
+li:nth-of-type(5)::before {
+    background-image: url(icons_hw_module_3/settings.png);
+}
+
+li:hover {
+    background-color: #626262;
+}
